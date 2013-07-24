@@ -1,0 +1,64 @@
+<ui version="4.0" >
+ <class>EncodingDialog</class>
+ <widget class="QDialog" name="EncodingDialog" >
+  <property name="windowTitle" >
+   <string>Convert Encoding</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item>
+     <widget class="QLabel" name="sourceLabel" >
+       <property name="text" >
+         <string>Source encoding:</string>
+       </property>
+       <property name="buddy" >
+         <cstring>sourceEncoding</cstring>
+       </property>
+     </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="sourceEncoding" >
+     <property name="editable" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+     <widget class="QLabel" name="targetLabel" >
+       <property name="text" >
+         <string>Target encoding:</string>
+       </property>
+       <property name="buddy" >
+         <cstring>targetEncoding</cstring>
+       </property>
+     </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="targetEncoding" >
+     <property name="editable" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonbox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>buttonbox</tabstop>
+  <tabstop>sourceEncoding</tabstop>
+  <tabstop>targetEncoding</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
